@@ -1,0 +1,158 @@
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+ } 
+
+header {
+   background: #5472B2;
+   width: 100%;
+   color: #FFFFFF;
+   font-size: 24px;
+   text-align: center;
+   line-height: 2.5em;
+   margin-bottom: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#titleScreen, #quizScreen, #result {
+    margin-top: 50px;
+}
+
+h1, h2, h3 {
+    color: #444;
+}
+
+h3 {
+    text-align: left;
+    margin-left: 10%;
+}
+
+ul {
+    text-align: right;
+    margin-right: 10%;
+    font-style: italic;
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.2em; 
+    color: #333; 
+    background-color: #f0f0f0; 
+    padding: 15px; 
+    border-radius: 10px; 
+    list-style-type: disc; 
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #3d507a;
+    ;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+#headingPic {
+    border-radius: 5px; 
+    width: auto; 
+    height: 300px;
+}
+
+#questions {
+    text-align: left;
+    margin-right: 10%;
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.2em; 
+    color: #333; 
+    background-color: #f0f0f0; 
+    padding: 15px; 
+}
+
+#questionHeading {
+    text-decoration: underline;
+}
+
+#none { 
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-end;
+    gap: 10px; 
+    margin-top: 20px; 
+}
+
+#none button { 
+    width: 200px;
+    text-align: right;
+    border-radius: 15px; 
+}
+
+#answersBlue {
+    background-color: #140077;
+}
+
+#answersRed {
+    background-color: #76121c;
+}
+
+
+/* Progress Bar Styles                                          */ 
+
+.slide-progress-bar {
+    width: 1118px;
+    background-color: rgba(155, 155, 255, 0.36);
+    transition: width 10s linear;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+.progress-bar {
+    height: 15px;
+    background-color: #5472B2;
+    width: 1%;
+    position: relative;
+    transition: linear;
+  }
+
+#progressBarContainer { 
+    width: 80%; 
+    background-color: #ddd; 
+    margin: 20px auto; 
+    border-radius: 5px; 
+    overflow: hidden; 
+} 
+#progressBar { 
+    height: 20px; 
+    width: 0; 
+    background-color: #4caf50; 
+    text-align: center; 
+    line-height: 20px; 
+    color: white; 
+}
+

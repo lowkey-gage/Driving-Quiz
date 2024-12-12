@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="quiz.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Car Quiz</h1>
+    </header>
+
+    <section>
+        <div id="imageContainer">
+            <img src="question1.webp" id="headingPic">
+        </div>
+        <br>
+        <h3 id="questionHeading">Question 1</h3>
+        <br>
+        <div id="quizForm" class="quiz-content">
+            <div id="questions" class="question">
+                <p>1. What should you do if you see an emergency vehicle approaching with flashing lights?</p>
+                <div id="none">
+                    <button id="answersBlue" onclick="checkAnswer(0)">Continue driving at the same speed</button><br>
+                    <button id="answersRed" onclick="checkAnswer(1)">Pull over to the side of the road and stop</button><br>
+                    <button id="answersBlue" onclick="checkAnswer(2)">Increase your speed to clear the lane</button><br>
+                    <button id="answersRed" onclick="checkAnswer(3)">Stop your vehicle immediately, wherever you are</button><br>
+                </div>
+            </div>
+        </div>
+        <div id="progressBarContainer">
+            <div id="progressBar"></div>
+        </div>
+        <div id="questionListContainer">
+            <ul id="questionList"></ul>
+        </div>
+    </section>
+</body>
+</html>

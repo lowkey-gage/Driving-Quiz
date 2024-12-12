@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+       JavaScript Final Project
+ 
+       Author: Gage W. Reed
+       Date:   12/9/24
+ 
+       Filename: quiz.html
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving Safety Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="quiz.js" defer></script>
+</head>
+
+<body>
+    <header>
+       <h1>
+          Welcome to the Car Quiz
+       </h1>
+    </header>
+
+    <section>
+        <div id="imageContainer"> 
+           <img src="titlePic.png" id="headingPic"> 
+        </div>
+        <h3>In this quiz you will be tested on...</h3>
+        <nav>
+           <ul>
+              <ul>Vehicle Safety</ul>
+              <ul>Rules of the Road</ul>
+              <ul>Driving impairment</ul>
+           </ul>
+        </nav>       
+     </section>
+     <article>
+        <p>This quiz will be multiple choice answers and scored out of 10</p>
+     </article>
+
+     <div id="startScreen">
+         <button onclick="startQuiz()">Start Quiz</button>
+     </div>
+     <div id="quizScreen" style="display:none;">
+         <h2>Driving Safety Quiz</h2>
+         <div id="progress"></div>
+         <div id="questionContainer">
+             <p id="question"></p>
+             <div id="answers"></div>
+         </div>
+     </div>
+</body>
+</html>
